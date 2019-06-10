@@ -1,0 +1,41 @@
+.gray-hover {
+  background: gray;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  color: #fff;
+  background: #000;
+}
+
+.container-header {
+  max-width: 1500px;
+  color: #fff;
+  background: #000;
+  font-family: "Poppins", sans-serif;
+}
+.container-header__header-foto {
+  animation: opac 0.8s;
+}
+.container-header__header-foto img {
+  max-width: 100%;
+  margin-bottom: -8px;
+}
+.container-header .header-button {
+  width: 35%;
+  padding: 8px 16px;
+}
+.container-header .header-button__button-text {
+  opacity: 0.6;
+  border-radius: 8px;
+}
+.container-header .header-button__button-text .title {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 10px 0px;
+}
+
+/*# sourceMappingURL=index.css.map */
