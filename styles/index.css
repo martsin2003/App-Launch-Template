@@ -1,5 +1,5 @@
 .gray-hover {
-  background: gray;
+  background: #ccc;
 }
 
 body,
@@ -36,6 +36,60 @@ html {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin: 10px 0px;
+}
+
+.container-info-app {
+  padding: 64px 0px;
+  color: #000;
+  background: #fff;
+}
+.container-info-app__wrapper-app {
+  padding: 0px 12px;
+}
+.container-info-app__wrapper-app .title-text {
+  width: 67%;
+  display: flex;
+  flex-direction: column;
+}
+.container-info-app__wrapper-app .title-text__title {
+  font-size: 64px;
+  margin: 10px 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 50;
+}
+.container-info-app__wrapper-app .title-text__text-buy {
+  color: #4caf50;
+  font-size: 48px;
+  font-family: "Poppins", sans-serif;
+  margin: 10px 0px;
+}
+.container-info-app__wrapper-app .title-text__text-photo {
+  margin: 6px 0px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.container-info-app__wrapper-app .title-text strong {
+  font-size: 24px;
+}
+.container-info-app__wrapper-app .button {
+  width: 20%;
+  color: #000;
+  background: #f1f1f1;
+  padding: 12px 24px;
+  margin: 16px 0px;
+}
+.container-info-app__wrapper-app .button:hover {
+  background: #ccc;
+}
+.container-info-app__wrapper-app .button span {
+  font-family: "Poppins", sans-serif;
+}
+.container-info-app__wrapper-app .text-available-for {
+  display: flex;
+}
+.container-info-app__wrapper-app .text-available-for span {
+  margin: 16px 0px;
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */
