@@ -16,46 +16,129 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container-header">
-      <div class="container-header__header-foto">
-        <img src="https://www.w3schools.com/w3images/app.jpg" alt="" />
-        <div class="header-button">
-          <div class="header-button__button-text">
-            <span class="title">Take photos with our app</span>
+    <div class="main-wrapper">
+      <div class="container-header">
+        <div class="container-header__header-foto">
+          <div class="header-slide">
+            <img src="https://www.w3schools.com/w3images/app.jpg" alt="" />
+            <div class="header-button-wrapper">
+              <div class="header-button">
+                <div class="header-button__button-text">
+                  <span class="title">Take photos with our app</span>
+                  <hr />
+                  <div class="subtitle">
+                    Super simple installment: free of charge
+                  </div>
+                </div>
+                <div class="button-wrapper">
+                  <button
+                    class="header-card-button gray-hover"
+                    onclick="openDialog()"
+                  >
+                    Download
+                    <i class="fa fa-android"></i>
+                    <i class="fa fa-apple"></i>
+                    <i class="fa fa-windows"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-slide">
+            <img src="https://www.w3schools.com/w3images/app2.jpg" alt="" />
+            <div class="header-button-wrapper">
+              <div class="header-button">
+                <div class="header-button__button-text">
+                  <span class="title">CLICK! Fast and Easy</span>
+                  <hr />
+                  <div class="subtitle">
+                    Choose from thousands of features
+                  </div>
+                </div>
+                <div class="button-wrapper">
+                  <button
+                    class="header-card-button gray-hover"
+                    onclick="openDialog()"
+                  >
+                    Download
+                    <i class="fa fa-android"></i>
+                    <i class="fa fa-apple"></i>
+                    <i class="fa fa-windows"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-slide">
+            <img src="https://www.w3schools.com/w3images/app4.jpg" alt="" />
+            <div class="header-button-wrapper">
+              <div class="header-button">
+                <div class="header-button__button-text">
+                  <span class="title">Smart Design</span>
+                  <hr />
+                  <div class="subtitle">
+                    Customize photos as you go
+                  </div>
+                </div>
+                <div class="button-wrapper">
+                  <button
+                    class="header-card-button gray-hover"
+                    onclick="openDialog()"
+                  >
+                    Download
+                    <i class="fa fa-android"></i>
+                    <i class="fa fa-apple"></i>
+                    <i class="fa fa-windows"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="button-take-tour" onclick="nextSlide()">
+          Take tour
+          <i class="fa fa-angle-right"></i>
+        </button>
+      </div>
+
+      <div class="container-info-app">
+        <div class="container-info-app__wrapper-app">
+          <div class="title-text">
+            <span class="title-text__title"><b>The App</b> </span>
+            <span class="title-text__text-buy">Why buy it?</span>
+            <span class="title-text__text-photo">
+              <strong>Take photos like a pro.</strong>
+              You should buy this app because lorem ipsum consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur.
+            </span>
+          </div>
+          <div class="button">
+            <i class="fa fa-download">
+              <span> Download Application</span>
+            </i>
+          </div>
+          <div class="text-available-for">
+            <span>
+              Available for
+              <i class="fa fa-android"></i>
+              <i class="fa fa-apple"></i>
+              <i class="fa fa-windows"></i>
+            </span>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-info-app">
-      <div class="container-info-app__wrapper-app">
-        <div class="title-text">
-          <span class="title-text__title">The App</span>
-          <span class="title-text__text-buy">Why buy it?</span>
-          <span class="title-text__text-photo">
-            <strong>Take photos like a pro.</strong>
-            You should buy this app because lorem ipsum consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur.
-          </span>
-        </div>
-        <div class="button">
-          <i class="fa fa-download">
-            <span> Download Application</span>
-          </i>
-        </div>
-        <div class="text-available-for">
-          <span>
-            Available for
-            <i class="fa fa-android"></i>
-            <i class="fa fa-apple"></i>
-            <i class="fa fa-windows"></i>
-          </span>
-        </div>
+    <div class="dialog-container" id="dialog">
+      <div class="dialog-content">
+        <i class="fa fa-remove" onclick="openDialog()"></i>
       </div>
     </div>
+
+    <script src="./app.js"></script>
   </body>
 </html>
