@@ -295,4 +295,106 @@ html {
   }
 }
 
+.container-clarity {
+  color: #000;
+  background: #f1f1f1;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  &__wrapper-clarity {
+    padding: 0px 8px;
+    display: flex;
+    .wrapper-photo {
+      padding: 0px 8px;
+      img {
+        filter: grayscale(75%);
+        border-radius: 8px;
+      }
+    }
+    .wrapper-info {
+      padding: 0px 8px;
+      &__title {
+        font-size: 64px;
+        font-family: 'Poppins', sans-serif;
+        margin: 10px 0px;
+      }
+      &__text {
+        color: #f44336;
+        font-size: 48px;
+        font-family: 'Poppins', sans-serif;
+        margin: 10px 0px;
+        display: flex;
+      }
+      &__text-sharp {
+        max-width: 16px 0px;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+      }
+      &__text-revolution {
+        font-size: 24px;
+        font-family: 'Poppins', sans-serif;
+      }
+    }
+  }
+}
+
+.container-icon {
+  color: #fff;
+  background: #616161;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  text-align: center;
+  &__title {
+    display: block;
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0px;
+  }
+  &__text {
+    display: block;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  .block-first {
+    margin-top: 64px;
+    display: flex;
+    text-align: center;
+    &__icon {
+      width: 25%;
+    }
+    i {
+      display: block;
+      font-size: 64px;
+    }
+    span {
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      margin: 16px 0px;
+    }
+  }
+}
+
+.container-pricing {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  color: #000;
+  background: #fff;
+  &__title {
+    font-size: 64px;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0px;
+    text-align: center;
+  }
+  &__text {
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin: 18px 0px;
+    text-align: center;
+  }
+  .block-basic {
+    margin-top: 64px;
+    padding: 0px 8px;
+  }
+}
+
 @import './common.scss';
