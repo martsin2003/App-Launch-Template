@@ -333,38 +333,38 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-.container-icon {
+.app-container-icon {
   color: #fff;
   background: #616161;
   padding-top: 64px;
   padding-bottom: 64px;
   text-align: center;
 }
-.container-icon__title {
+.app-container-icon__title {
   display: block;
   font-size: 64px;
   font-family: "Poppins", sans-serif;
   margin: 10px 0px;
 }
-.container-icon__text {
+.app-container-icon__text {
   display: block;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
-.container-icon .block-first {
+.app-container-icon .block-first {
   margin-top: 64px;
   display: flex;
   text-align: center;
 }
-.container-icon .block-first__icon {
+.app-container-icon .block-first__icon {
   width: 25%;
 }
-.container-icon .block-first i {
+.app-container-icon .block-first i {
   display: block;
   font-size: 64px;
 }
-.container-icon .block-first span {
+.app-container-icon .block-first span {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   margin: 16px 0px;
@@ -388,9 +388,52 @@ html {
   margin: 18px 0px;
   text-align: center;
 }
-.container-pricing .block-basic {
-  margin-top: 64px;
+.container-pricing .pricing-crads-container {
+  display: flex;
+  justify-content: center;
   padding: 0px 8px;
+  margin-top: 64px;
+}
+.container-pricing .pricing-crads-container .pricing-crad {
+  width: 50%;
+  font-family: "Poppins", sans-serif;
+  margin: 0px 8px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.container-pricing .pricing-crads-container .pricing-crad__title {
+  padding: 32px 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #616161;
+  border-bottom: 1px solid #ddd;
+  font-size: 24px;
+}
+.container-pricing .pricing-crads-container .pricing-crad__properties {
+  padding: 16px 16px;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+.container-pricing .pricing-crads-container .pricing-crad__properties__price {
+  padding: 10px 0px;
+  opacity: 0.6;
+  font-size: 30px;
+}
+.container-pricing .pricing-crads-container .pricing-crad__button-wrapper {
+  padding: 24px 16px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+}
+.container-pricing .pricing-crads-container .pricing-crad__button {
+  padding: 12px 24px;
+  background: black;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .gray-hover:hover {
