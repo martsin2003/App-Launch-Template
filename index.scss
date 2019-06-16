@@ -173,7 +173,9 @@ html {
   padding: 64px 0px;
   color: #000;
   background: #fff;
+  display: flex;
   &__wrapper-app {
+    flex: 1;
     padding: 0px 12px;
     .title-text {
       width: 67%;
@@ -201,20 +203,21 @@ html {
       }
     }
     .button {
+      display: inline-block;
+      color: #000;
+      background: #f1f1f1;
+      margin: 16px 0px;
+      padding: 12px 24px;
+      cursor: pointer;
+      &:hover {
+        background: #ccc;
+      }
       .fa {
         color: #000;
-        background: #f1f1f1;
       }
       span {
         font-family: 'Poppins', sans-serif;
         width: 20%;
-        color: #000;
-        background: #f1f1f1;
-        margin: 16px 0px;
-        padding: 12px 24px;
-        &:hover {
-          background: #ccc;
-        }
       }
     }
     .text-available-for {
@@ -224,7 +227,19 @@ html {
         margin: 16px 0px;
         font-family: 'Poppins', sans-serif;
       }
+      i {
+        font-size: 24px;
+        &:first-child {
+          color: #4caf50;
+        }
+        &:last-child {
+          color: #2196f3;
+        }
+      }
     }
+  }
+  &__image {
+    padding: 0px 20px;
   }
 }
 

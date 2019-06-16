@@ -169,8 +169,10 @@ html {
   padding: 64px 0px;
   color: #000;
   background: #fff;
+  display: flex;
 }
 .container-info-app__wrapper-app {
+  flex: 1;
   padding: 0px 12px;
 }
 .container-info-app__wrapper-app .title-text {
@@ -198,20 +200,23 @@ html {
 .container-info-app__wrapper-app .title-text strong {
   font-size: 24px;
 }
-.container-info-app__wrapper-app .button .fa {
-  color: #000;
-  background: #f1f1f1;
-}
-.container-info-app__wrapper-app .button span {
-  font-family: "Poppins", sans-serif;
-  width: 20%;
+.container-info-app__wrapper-app .button {
+  display: inline-block;
   color: #000;
   background: #f1f1f1;
   margin: 16px 0px;
   padding: 12px 24px;
+  cursor: pointer;
 }
-.container-info-app__wrapper-app .button span:hover {
+.container-info-app__wrapper-app .button:hover {
   background: #ccc;
+}
+.container-info-app__wrapper-app .button .fa {
+  color: #000;
+}
+.container-info-app__wrapper-app .button span {
+  font-family: "Poppins", sans-serif;
+  width: 20%;
 }
 .container-info-app__wrapper-app .text-available-for {
   display: flex;
@@ -220,6 +225,18 @@ html {
   font-size: 16px;
   margin: 16px 0px;
   font-family: "Poppins", sans-serif;
+}
+.container-info-app__wrapper-app .text-available-for i {
+  font-size: 24px;
+}
+.container-info-app__wrapper-app .text-available-for i:first-child {
+  color: #4caf50;
+}
+.container-info-app__wrapper-app .text-available-for i:last-child {
+  color: #2196f3;
+}
+.container-info-app__image {
+  padding: 0px 20px;
 }
 
 .dialog-content {
