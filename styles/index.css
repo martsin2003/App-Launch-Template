@@ -15,12 +15,12 @@ html {
   height: 100vh;
   display: none;
   justify-content: center;
+  align-items: flex-start;
 }
 .dialog-container .dialog-content {
   padding: 36px;
   box-sizing: border-box;
   width: 900px;
-  height: 150px;
   top: 10%;
   position: absolute;
   background: white;
@@ -198,25 +198,80 @@ html {
 .container-info-app__wrapper-app .title-text strong {
   font-size: 24px;
 }
-.container-info-app__wrapper-app .button {
-  width: 20%;
+.container-info-app__wrapper-app .button .fa {
   color: #000;
   background: #f1f1f1;
-  padding: 12px 24px;
-  margin: 16px 0px;
-}
-.container-info-app__wrapper-app .button:hover {
-  background: #ccc;
 }
 .container-info-app__wrapper-app .button span {
   font-family: "Poppins", sans-serif;
+  width: 20%;
+  color: #000;
+  background: #f1f1f1;
+  margin: 16px 0px;
+  padding: 12px 24px;
+}
+.container-info-app__wrapper-app .button span:hover {
+  background: #ccc;
 }
 .container-info-app__wrapper-app .text-available-for {
   display: flex;
 }
 .container-info-app__wrapper-app .text-available-for span {
+  font-size: 16px;
   margin: 16px 0px;
   font-family: "Poppins", sans-serif;
+}
+
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.dialog-content__title {
+  letter-spacing: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+.dialog-content__text {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin: 16px 0px;
+}
+.dialog-content .container-icon {
+  display: flex;
+}
+.dialog-content .container-icon .fa {
+  font-size: 18px;
+  padding: 0px 3px;
+}
+.dialog-content .container-input {
+  display: flex;
+  padding: 20px 0px;
+}
+.dialog-content .container-input__text-email {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.dialog-content .container-button {
+  display: flex;
+}
+.dialog-content .container-button__button {
+  width: 100%;
+  color: #fff;
+  background: #f44336;
+  padding: 12px 24px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.dialog-content .container-button__button:hover {
+  color: #000;
+  background: #ccc;
 }
 
 .gray-hover:hover {

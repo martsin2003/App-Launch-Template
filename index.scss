@@ -15,11 +15,11 @@ html {
   height: 100vh;
   display: none;
   justify-content: center;
+  align-items: flex-start;
   .dialog-content {
     padding: 36px;
     box-sizing: border-box;
     width: 900px;
-    height: 150px;
     top: 10%;
     position: absolute;
     background: white;
@@ -201,23 +201,80 @@ html {
       }
     }
     .button {
-      width: 20%;
-      color: #000;
-      background: #f1f1f1;
-      padding: 12px 24px;
-      margin: 16px 0px;
-      &:hover {
-        background: #ccc;
+      .fa {
+        color: #000;
+        background: #f1f1f1;
       }
       span {
         font-family: 'Poppins', sans-serif;
+        width: 20%;
+        color: #000;
+        background: #f1f1f1;
+        margin: 16px 0px;
+        padding: 12px 24px;
+        &:hover {
+          background: #ccc;
+        }
       }
     }
     .text-available-for {
       display: flex;
       span {
+        font-size: 16px;
         margin: 16px 0px;
         font-family: 'Poppins', sans-serif;
+      }
+    }
+  }
+}
+
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  &__title {
+    letter-spacing: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  &__text {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin: 16px 0px;
+  }
+  .container-icon {
+    display: flex;
+    .fa {
+      font-size: 18px;
+      padding: 0px 3px;
+    }
+  }
+  .container-input {
+    display: flex;
+    padding: 20px 0px;
+    &__text-email {
+      width: 100%;
+      border: 1px solid #ccc;
+      padding: 8px;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+  .container-button {
+    display: flex;
+    &__button {
+      width: 100%;
+      color: #fff;
+      background: #f44336;
+      padding: 12px 24px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      &:hover {
+        color: #000;
+        background: #ccc;
       }
     }
   }
