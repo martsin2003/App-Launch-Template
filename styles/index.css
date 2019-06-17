@@ -10,6 +10,7 @@ html {
   top: 0;
   left: 0;
   position: fixed;
+  z-index: 999;
   background: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100vh;
@@ -473,6 +474,10 @@ html {
 
 .red-color {
   color: #f44336;
+}
+
+.background-red {
+  background: #f44336 !important;
 }
 
 .light-green-color {
