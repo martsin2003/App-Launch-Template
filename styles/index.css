@@ -408,6 +408,9 @@ html {
   border-bottom: 1px solid #ddd;
   font-size: 24px;
 }
+.container-pricing .pricing-crads-container .pricing-crad__title:nth-child(2) {
+  color: #f44336;
+}
 .container-pricing .pricing-crads-container .pricing-crad__properties {
   padding: 16px 16px;
   border-bottom: 1px solid #ddd;
@@ -434,6 +437,29 @@ html {
   outline: none;
   font-size: 16px;
   cursor: pointer;
+}
+
+.container-footer {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  background: #f1f1f1;
+  text-align: center;
+  padding: 32px 16px;
+}
+.container-footer__block-icon {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  margin: 16px 0px;
+}
+.container-footer__tetx {
+  color: #000;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  margin: 15px 0px;
+}
+.container-footer a {
+  color: #000;
 }
 
 .gray-hover:hover {
@@ -483,6 +509,10 @@ html {
 
 .pink-color {
   color: #e91e63;
+}
+
+.black-color {
+  color: #000;
 }
 
 /*# sourceMappingURL=index.css.map */
